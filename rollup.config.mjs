@@ -8,13 +8,13 @@ export default {
     input: 'src/index.ts',
     output: {
         file: 'lib/index.js',
-        format: 'es',
+        format: 'umd',
         name: 'MyLibrary'
     },
     plugins: [
         alias({
             entries: [
-              { find: '@', replacement: 'src' },
+                { find: '@', replacement: 'src' },
             ]
         }),
         typescript(),

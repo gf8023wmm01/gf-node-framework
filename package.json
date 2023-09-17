@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch src -e ts --exec ts-node -r tsconfig-paths/register --files src/index.ts",
     "test": "nodemon --watch test -e ts --exec ts-node -r tsconfig-paths/register --files test/index.ts",
-    "build": "rollup -c --bundleConfigAsCjs"
+    "build": "del /S /Q lib && rollup -c --bundleConfigAsCjs"
   },
   "repository": {
     "type": "git",

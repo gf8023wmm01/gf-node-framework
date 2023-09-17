@@ -1,3 +1,3 @@
-import say from '../lib/index'
+// import say from '../lib/index'
 
-console.log(say(5));
+// console.log(say(5));
